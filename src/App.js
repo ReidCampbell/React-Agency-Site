@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import Menu from "./Menu";
+import "./Menu.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    constructor(props, context) {
+        super(props, context);
+        this.state = {
+            visible: false
+        };
+
+        this.handleMouseDown = this.handleMouseDown.bind(this);
+        this.toggleMenu = this.toggleMenu.bind(this);
+    }
+
+    handleMouseDown(e) {
+        this.toggleMenu();
+
+        e.stopPropagation();
+    }
+
+    toggleMenu() {
+        this.setState({
+            visible: !this.state.visible
+        });
+    }
+
+    render() {
+        return (
+            <>
+                <Menu
+                    handleMouseDown={this.handleMouseDown}
+                    menuVisibility={this.state.visible}
+                />
+                <div />
+            </>
+        );
+    }
 }
 
 export default App;
