@@ -59,6 +59,7 @@ nav {
     display: inline-block;
     position: absolute;
     left: 250px;
+    display: flex;
 }
 
 ul {
@@ -86,7 +87,7 @@ ul {
 .logo-btn svg {
     position: absolute;
     bottom: 56px;
-    left: 20px;
+    left: 24px;
     transition: fill 0.4s ease;
     fill: rgb(29, 29, 29);
 }
@@ -95,6 +96,11 @@ ul {
     fill: white;
 }
 
+.header {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
 /* HAMBURGER */
 
 .hamburger {

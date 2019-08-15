@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Menu from "./Menu";
+import Header from "./Header";
 import "./Menu.css";
 
 class App extends Component {
@@ -28,11 +29,15 @@ class App extends Component {
     render() {
         return (
             <>
-                <Menu
-                    handleMouseDown={this.handleMouseDown}
-                    menuVisibility={this.state.visible}
-                />
-                <div />
+                <div className="header">
+                    <Menu
+                        handleMouseDown={this.handleMouseDown}
+                        menuVisibility={this.state.visible}
+                    />
+                    <div className="header-container">
+                        <Header />
+                    </div>
+                </div>
             </>
         );
     }
