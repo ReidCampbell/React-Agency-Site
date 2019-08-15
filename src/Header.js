@@ -14,13 +14,23 @@ class Header extends Component {
 
     render() {
         return (
-            <div class="video-container">
-                <video id="background-video" loop autoPlay>
-                    <source src={this.state.videoURL} type="video/mp4" />
-                    <source src={this.state.videoURL} type="video/ogg" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+            <>
+                <div className="video-container">
+                    <video id="background-video" loop autoPlay>
+                        <source src={this.state.videoURL} type="video/mp4" />
+                        <source src={this.state.videoURL} type="video/ogg" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div className="logo-img">
+                        <img src={require("./images/logo.png")} />
+                    </div>
+                    <h1 className="hero-heading">
+                        <div className="heading-container">
+                            <div className="panel">Inspirational Slogan</div>
+                        </div>
+                    </h1>
+                </div>
+            </>
         );
     }
 }

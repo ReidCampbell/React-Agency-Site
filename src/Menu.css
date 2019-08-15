@@ -22,10 +22,12 @@
 
 #flyoutMenu h2 a {
     color: #6363f4;
-    margin-left: 15px;
+    margin-left: 25%;
     text-decoration: none;
-    font-size: 72px;
+    font-size: 3.5em;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    line-height: 133px;
 }
 
 #flyoutMenu h2 a:hover {
@@ -36,7 +38,6 @@
 .primary-nav__links {
     display: flex;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
     flex: 1 0 0px;
     flex-grow: 1;
@@ -185,4 +186,37 @@ ul {
     transform: translate3d(0, -20px, 0) rotate(-270deg);
     transition-delay: 0.075s;
     color: white;
+}
+
+/* Social Links */
+
+.nav-social {
+    position: absolute;
+    z-index: 1;
+    bottom: 100px;
+    left: 444px;
+}
+
+.social-container {
+    margin: 0 auto;
+    max-width: 1680px;
+    width: 100%;
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+}
+
+.social-links-link {
+    align-items: center;
+    background: none;
+    color: inherit;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    fill: currentColor;
+    padding: 12px;
+    transition: transform 0.2s ease-out;
 }

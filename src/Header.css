@@ -31,3 +31,43 @@
 #background-video {
     display: flex;
 }
+
+.logo-container {
+    margin: 0 auto;
+    max-width: 1680px;
+    width: 100%;
+}
+
+.hero-heading {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.panel {
+    padding: 45px 30px;
+    padding-left: calc(env(safe-area-inset-left) + 30px);
+    padding-right: calc(env(safe-area-inset-right) + 30px);
+    color: white;
+    font-size: 200px;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo-img {
+    display: block;
+    left: 134px;
+    height: 51px;
+    position: absolute;
+    top: 66px;
+    z-index: 1;
+    width: 140px;
+}
+
+.logo-img img {
+    width: 100px;
+    height: 100px;
+}
