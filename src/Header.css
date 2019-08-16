@@ -1,35 +1,51 @@
 .video-container {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     bottom: 0;
     /* width: 100%; */
-    height: 100%;
+    /* height: 100%;
     overflow: hidden;
     background-color: white;
     z-index: 0;
+    display: flex; */
+    width: 100%;
+    height: 100%;
     display: flex;
-    width: calc(100% - 90px);
+    justify-content: center;
+    align-items: center;
 }
 
 .video-container video {
     /* Make video to at least 100% wide and tall */
-    min-width: 100%;
-    min-height: 100%;
+    /* min-width: 100%;
+    min-height: 100%; */
 
     /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
 
     /* Center the video */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 1;
+    left: calc(100% - 90px); */
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
 }
 
-#background-video {
+.video {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.background-video {
     display: flex;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .logo-container {
@@ -43,9 +59,10 @@
     width: 100%;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 2;
 }
 
 .panel {
@@ -70,4 +87,20 @@
 .logo-img img {
     width: 100px;
     height: 100px;
+}
+
+.heading-container {
+    width: calc(100% - 90px);
+}
+
+.page-header {
+    margin-left: 90px;
+    height: calc(100vh - 60px);
+}
+
+.hero {
+    color: #fff;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Menu from "./Menu";
 import Header from "./Header";
 import "./Menu.css";
+import OurVision from "./OurVision";
 
 class App extends Component {
     constructor(props, context) {
@@ -38,6 +39,7 @@ class App extends Component {
                         <Header />
                     </div>
                 </div>
+                <OurVision />
             </>
         );
     }

@@ -19,7 +19,7 @@ class Menu extends Component {
                     <div className="hamburger-btn">
                         <button
                             type="button"
-                            onMouseDown={this.props.handleMouseDown}
+                            onClick={this.props.handleMouseDown}
                             className={active}
                         >
                             <div className="hamburger-box">
@@ -56,7 +56,7 @@ class Menu extends Component {
                 </div>
                 <div
                     id="flyoutMenu"
-                    onMouseDown={this.props.handleMouseDown}
+                    onClick={this.props.handleMouseUp}
                     className={visibility}
                 >
                     <div className="primary-nav">
@@ -94,8 +94,8 @@ class Menu extends Component {
                                             title="Twitter"
                                         >
                                             <svg
-                                                width="20"
-                                                height="20"
+                                                width="30"
+                                                height="30"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 21 18"
                                                 focusable="false"
@@ -125,8 +125,8 @@ class Menu extends Component {
                                             title="LinkedIn"
                                         >
                                             <svg
-                                                width="22"
-                                                height="22"
+                                                width="32"
+                                                height="32"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 22 22"
                                                 focusable="false"
@@ -146,8 +146,8 @@ class Menu extends Component {
                                             title="Instagram"
                                         >
                                             <svg
-                                                width="24"
-                                                height="24"
+                                                width="34"
+                                                height="34"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24"
                                                 focusable="false"
@@ -167,8 +167,8 @@ class Menu extends Component {
                                             title="Medium"
                                         >
                                             <svg
-                                                width="20"
-                                                height="20"
+                                                width="30"
+                                                height="30"
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 22 19"
                                                 focusable="false"
@@ -195,6 +195,12 @@ class Menu extends Component {
                                 </div>
                             </div>
                         </div>
+                        {/* <div className="circle-mask">
+                            <img src={require("./images/circle.png")} />
+                            <div className="image-mask">
+                                <img src={require("./images/image-mask.jpg")} />
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </>
