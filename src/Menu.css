@@ -11,13 +11,15 @@
 }
 
 #flyoutMenu.hide {
-    transform: translate3d(-100vw, 0, 0);
+    /* transform: translate3d(-100vw, 0, 0); */
     overflow: hidden;
+    transform: translate3d(-100%, 0, 0) scale3d(1, 1, 1);
 }
 
 #flyoutMenu.show {
-    transform: translate3d(0vw, 0, 0);
+    /* transform: translate3d(0vw, 0, 0); */
     overflow: hidden;
+    transform: translate3d(0%, 0, 0) scale3d(1, 1, 1);
 }
 
 #flyoutMenu h2 a {
@@ -65,6 +67,7 @@ nav {
 
 ul {
     list-style: none;
+    width: 700px;
 }
 
 .text--2 {
