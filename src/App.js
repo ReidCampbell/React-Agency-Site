@@ -3,6 +3,9 @@ import Menu from "./Menu";
 import Header from "./Header";
 import "./Menu.css";
 import OurVision from "./OurVision";
+import FeatureContent from "./FeatureContent";
+import WhatWeDo from "./WhatWeDo";
+import Carousel from "./Carousel";
 
 class App extends Component {
     constructor(props, context) {
@@ -40,6 +43,9 @@ class App extends Component {
                     </div>
                 </div>
                 <OurVision />
+                <FeatureContent />
+                <WhatWeDo />
+                <Carousel />
             </>
         );
     }

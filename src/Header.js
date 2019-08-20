@@ -18,7 +18,7 @@ class Header extends Component {
                 <header className="page-header">
                     <div className="hero">
                         <div className="logo-img">
-                            <img src={require("./images/logo.png")} />
+                            <img src={require("./images/header-logo.svg")} />
                         </div>
                         <h1 className="hero-heading">
                             <div className="heading-container">

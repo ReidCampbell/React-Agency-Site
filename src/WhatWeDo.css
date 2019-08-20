@@ -1,0 +1,30 @@
+.feature-container {
+    margin: 0 0 0 90px;
+    justify-content: space-around;
+    padding: 120px 130px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    align-items: center;
+    height: 680px;
+    justify-content: center;
+}
+
+.left-column {
+    height: 100px;
+}
+
+.right-column {
+    height: 100px;
+}
