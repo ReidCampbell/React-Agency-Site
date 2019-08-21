@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="footer-panel">
                     <div className="footer-grid">
                         <div className="footer-contact">
-                            <h2 class="text--3 footer-header">Let's Talk</h2>
+                            <h2 class="footer-header">Let's Talk</h2>
                             <p>
                                 General enquiries:
                                 <br />
@@ -17,7 +17,7 @@ const Footer = () => {
                                     rel="external"
                                     class="footer-link"
                                 >
-                                    <strong>hello@digital.com</strong>
+                                    <strong>hello@rsc.com</strong>
                                 </a>
                             </p>
                             <p>
@@ -28,7 +28,7 @@ const Footer = () => {
                                     rel="external"
                                     class="footer-link"
                                 >
-                                    <strong>opportunities@digital.com</strong>
+                                    <strong>opportunities@rsc.com</strong>
                                 </a>
                             </p>
                         </div>
@@ -40,7 +40,7 @@ const Footer = () => {
                                 <form
                                     class="newsletter-form"
                                     method="POST"
-                                    action="https://zonedigital.us2.list-manage.com/subscribe/post?u=0d73c5a0b4fbcc700d34dc817&amp;id=4d650ab9c9"
+                                    action="#"
                                 >
                                     <p class="newsletter-copy">
                                         Sign up for our weekly edit of digital
@@ -53,7 +53,7 @@ const Footer = () => {
                                         </label>
                                         <input
                                             id="email-input"
-                                            class="newsletter-_input"
+                                            class="newsletter-input"
                                             type="email"
                                             name="MERGE0"
                                             required=""

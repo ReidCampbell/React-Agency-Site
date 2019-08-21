@@ -16,12 +16,11 @@
     background-color: blue;
 }
 
-ul {
+/* ul {
     width: 100vw;
-}
+} */
 
 .slick-dots li button:before {
-    /* font-family: "slick"; */
     font-size: 30px;
     line-height: 20px;
     border-radius: 100%;

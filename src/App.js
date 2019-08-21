@@ -51,6 +51,7 @@ class App extends Component {
                     <WhatWeDo />
                     <Carousel />
                     <FeatureImage imgUrl={require("./images/coffee.jpg")} />
+                    <WhatWeDo />
                     <Footer />
                 </div>
             </>

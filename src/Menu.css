@@ -26,7 +26,7 @@
 
 #flyoutMenu h2 a {
     color: #6363f4;
-    margin-left: 25%;
+    /* margin-left: 25%; */
     text-decoration: none;
     font-size: 3.5em;
     font-weight: bold;
@@ -63,13 +63,14 @@
 nav {
     display: inline-block;
     position: absolute;
-    left: 250px;
     display: flex;
+    left: 15%;
 }
 
 ul {
     list-style: none;
     width: 700px;
+    padding: 0;
 }
 
 .text--2 {
@@ -211,14 +212,15 @@ ul {
 .nav-social {
     position: absolute;
     z-index: 1;
-    bottom: 51px;
-    left: 480px;
+    bottom: 5%;
+    left: 15%;
 }
 
 .social-container {
     margin: 0 auto;
     max-width: 1680px;
     width: 100%;
+    display: flex;
 }
 
 .social-links {
