@@ -8,6 +8,7 @@ import WhatWeDo from "./WhatWeDo";
 import Carousel from "./Carousel";
 import FeatureImage from "./FeatureImage";
 import Footer from "./Footer";
+import websiteData from "./websiteData";
 
 class App extends Component {
     constructor(props, context) {
@@ -52,7 +53,7 @@ class App extends Component {
                     <Carousel />
                     <FeatureImage imgUrl={require("./images/coffee.jpg")} />
                     <WhatWeDo />
-                    <Footer />
+                    <Footer websiteData={websiteData} />
                 </div>
             </>
         );
