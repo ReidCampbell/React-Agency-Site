@@ -1,25 +1,30 @@
 let websiteData = {
-    name: "Reid Campbell",
-    role: "Full Stack Web Developer",
-    linkedinId: "ReidScottCampbell",
+    websiteTitle: "React Agency Template",
     logo: "images/logo.png",
-    roleDescription:
-        " I like dabbling in various parts of web development and like to explore new technologies.",
     socialLinks: [
         {
             name: "linkedin",
-            url: "https://www.linkedin.com/in/ReidScottCampbell/",
+            url: "https://www.linkedin.com/in/",
             className: "fa fa-linkedin"
         },
         {
-            name: "github",
-            url: "http://github.com/ReidCampbell",
-            className: "fa fa-github"
+            name: "twitter",
+            url: "http://twitter.com/",
+            className: "fa fa-twitter"
+        },
+        {
+            name: "instagram",
+            url: "http://instagram.com/",
+            className: "fa fa-instagram"
+        },
+        {
+            name: "medium",
+            url: "http://medium.com/",
+            className: "fa fa-medium"
         }
     ],
-    aboutme:
-        "I earned my Bachelor's degree in Marketing, Advertising and Branding from the University of Gloucestershire in 2017 and worked in Sales and Digital Marketing Performance positions since then. I've always been passionate about storytelling, photography, and branding, so right after I finished University, I started my own media production company, Beehive Basement Media. In 2019, after quite some time considering it, I finally took the time to learn to code and completed the Web Development Bootcamp at Le Wagon London. Today my goal is joining an ambitious team and building products people love. I'm eager to know more about new opportunities, feel free to reach out to me.",
-    address: "London",
+    ourVision:
+        "I like it, but can the snow look a little warmer the target audience is males and females aged zero and up, yet I need a website. How much will it cost, or submit your meaningless business jargon to be used on the site!",
     email: [
         {
             general: "hello@rsc.com",
@@ -29,110 +34,29 @@ let websiteData = {
     offices: [
         {
             OfficeLocation: "London",
-            OfficeAddress: "123 Location Road",
-            OfficeNumber: "+44 (0)222 222 2222",
-            PhoneNumber: "+442222222222",
-            DirectionUrl: "http://www.google.com/maps",
-            OfficePhoto: ""
+            OfficeAddress: "Westminster, London SW1A 1AA",
+            OfficeNumber: "+44 (0)303 123 7300",
+            PhoneNumber: "0303 123 7300",
+            DirectionUrl:
+                "https://www.google.com/maps/dir//buckingham+palace/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x48760520cd5b5eb5:0xa26abf514d902a7?sa=X&ved=2ahUKEwj9rrTHgZXkAhX1VRUIHaWlCcgQ9RcwGHoECA0QDg"
         },
         {
             OfficeLocation: "Belfast",
-            OfficeAddress: "123 Belfast Road",
-            OfficeNumber: "+44 (0)222 222 2222",
-            PhoneNumber: "+442222222222",
-            DirectionUrl: "http://www.google.com/maps",
-            OfficePhoto: ""
+            OfficeAddress: "1 Olympic Way, Queen's Road BT3 9EP",
+            OfficeNumber: "+44 (0)289 076 6386",
+            PhoneNumber: "+442890766386",
+            DirectionUrl:
+                "https://www.google.com/maps/dir/51.525507,-0.058714/titanic+museum/@53.6080149,-7.5015163,6z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x486109b027638971:0x4c25729beb967212!2m2!1d-5.9103223!2d54.6081641"
+        },
+        {
+            OfficeLocation: "Reykjavik",
+            OfficeAddress: "Hallgrímstorg 101, 101 Reykjavík, Iceland",
+            OfficeNumber: "+354 510 1000",
+            PhoneNumber: "+354 510 1000",
+            DirectionUrl:
+                "https://www.google.com/maps/dir/51.525507,-0.058714/reykjavik+church+address/@57.0782786,-23.6059899,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x48d674cca0432db5:0xf7af28c4489daaef!2m2!1d-21.926637!2d64.1417149"
         }
-    ],
-    work: [
-        {
-            CompanyName: "OMD",
-            specialization: "Biddable Performance Executive",
-            MonthOfLeaving: "April",
-            YearOfLeaving: "2019",
-            Achievements: "Some Achievements"
-        },
-        {
-            CompanyName: "JCDecaux",
-            specialization: "Strategic Solutions Sales Coordinator",
-            MonthOfLeaving: "August",
-            YearOfLeaving: "2018",
-            Achievements: "Some Achievements"
-        }
-    ],
-    skillsDescription: "Technologies",
-    skills: [
-        {
-            skillname: "HTML5",
-            logo: "devicon-html5-plain-wordmark colored"
-        },
-        {
-            skillname: "CSS",
-            logo: "devicon-css3-plain-wordmark colored"
-        },
-        {
-            skillname: "ES6",
-            logo: "devicon-javascript-plain colored"
-        },
-        {
-            skillname: "Ruby",
-            logo: "devicon-ruby-plain-wordmark colored"
-        },
-        {
-            skillname: "ReactJS",
-            logo: "devicon-react-original-wordmark colored"
-        },
-        {
-            skillname: "Rails",
-            logo: "devicon-rails-plain-wordmark colored"
-        },
-        {
-            skillname: "MySQL",
-            logo: "devicon-mysql-plain-wordmark colored"
-        },
-        {
-            skillname: "Adobe Creative Suite",
-            logo: "devicon-photoshop-line colored"
-        },
-        {
-            skillname: "Git",
-            logo: "devicon-git-plain-wordmark colored"
-        }
-    ],
-    portfolio: [
-        {
-            name: "brunchee.",
-            description: "Web App",
-            imgurl: "images/portfolio/brunchee.gif",
-            link: "http://www.brunchee.rocks",
-            github: "https://github.com/ReidCampbell/brunchee"
-        }
-        // {
-        //     name: "project2",
-        //     description: "mobileapp",
-        //     imgurl: "images/portfolio/project.jpg"
-        // },
-        // {
-        //     name: "project3",
-        //     description: "mobileapp",
-        //     imgurl: "images/portfolio/project2.png"
-        // },
-        // {
-        //     name: "project4",
-        //     description: "mobileapp",
-        //     imgurl: "images/portfolio/phone.jpg"
-        // }
     ]
-    // testimonials: [
-    //     {
-    //         description: "",
-    //         name: ""
-    //     },
-    //     {
-    //         description: "",
-    //         name: ""
-    //     }
-    // ]
 };
 
 export default websiteData;

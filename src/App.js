@@ -49,10 +49,10 @@ class App extends Component {
                     <OurVision />
                     <FeatureImage imgUrl={require("./images/office.jpg")} />
                     <FeatureContent />
-                    <WhatWeDo />
+                    <FeatureContent />
                     <Carousel />
                     <FeatureImage imgUrl={require("./images/coffee.jpg")} />
-                    <WhatWeDo />
+                    <FeatureContent />
                     <Footer websiteData={websiteData} />
                 </div>
             </>

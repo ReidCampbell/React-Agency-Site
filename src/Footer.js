@@ -4,21 +4,21 @@ import "./Footer.css";
 class Footer extends Component {
     render() {
         let locationData = this.props.websiteData;
-
+        const baseUrl = "../../components/assets/images/";
         return (
             <div className="footer">
                 <div className="footer-container">
                     <div className="footer-panel">
                         <div className="footer-grid">
                             <div className="footer-contact">
-                                <h2 class="footer-header">Let's Talk</h2>
+                                <h2 className="footer-header">Let's Talk</h2>
                                 <p>
                                     General enquiries:
                                     <br />
                                     <a
                                         href="mailto:hello@digital.com"
                                         rel="external"
-                                        class="footer-link"
+                                        className="footer-link"
                                     >
                                         <strong>
                                             {locationData.email[0].general}
@@ -31,7 +31,7 @@ class Footer extends Component {
                                     <a
                                         href="mailto:opportunities@digital.com"
                                         rel="external"
-                                        class="footer-link"
+                                        className="footer-link"
                                     >
                                         <strong>
                                             {locationData.email[0].business}
@@ -39,41 +39,41 @@ class Footer extends Component {
                                     </a>
                                 </p>
                             </div>
-                            <div class="footer-newsletter">
-                                <div class="newsletter">
-                                    <h2 class="text--4 newsletter-title">
+                            <div className="footer-newsletter">
+                                <div className="newsletter">
+                                    <h2 className="text--4 newsletter-title">
                                         Sign up
                                     </h2>
                                     <form
-                                        class="newsletter-form"
+                                        className="newsletter-form"
                                         method="POST"
                                         action="#"
                                     >
-                                        <p class="newsletter-copy">
+                                        <p className="newsletter-copy">
                                             Sign up for our weekly edit of
                                             digital trends and insights from top
                                             industry thought leaders.
                                         </p>
-                                        <div class="field">
+                                        <div className="field">
                                             <label for="email-input">
                                                 Enter your email
                                             </label>
                                             <input
                                                 id="email-input"
-                                                class="newsletter-input"
+                                                className="newsletter-input"
                                                 type="email"
                                                 name="MERGE0"
                                                 required=""
                                                 value=""
                                             />
                                         </div>
-                                        <p class="newsletter-submit">
-                                            <span class="cta cta-default">
+                                        <p className="newsletter-submit">
+                                            <span className="cta cta-default">
                                                 <button
                                                     type="submit"
-                                                    class="button cta-target"
+                                                    className="button cta-target"
                                                 >
-                                                    <span class="cta-text">
+                                                    <span className="cta-text">
                                                         Submit
                                                         <svg
                                                             width="44px"
@@ -81,7 +81,7 @@ class Footer extends Component {
                                                             xmlns="http://www.w3.org/2000/svg"
                                                             viewBox="0 0 34 21"
                                                             focusable="false"
-                                                            tabindex="-1"
+                                                            tabIndex="-1"
                                                         />
                                                     </span>
                                                 </button>
@@ -90,35 +90,36 @@ class Footer extends Component {
                                     </form>
                                 </div>
                             </div>
-                            <div class="footer-offices">
+                            <div className="footer-offices">
                                 {locationData.offices &&
                                     locationData.offices.map((item, i) => {
                                         return (
-                                            <div key={i} class="footer-office">
-                                                <div class="office">
-                                                    <div class="office-secondary">
-                                                        <div class="picture picture--inline picture--loaded">
-                                                            <picture class="picture-asset">
+                                            <div
+                                                key={i}
+                                                className="footer-office"
+                                            >
+                                                <div className="office">
+                                                    <div className="office-secondary">
+                                                        <div className="picture picture--inline picture--loaded">
+                                                            <picture className="picture-asset">
                                                                 <img
-                                                                    src={
-                                                                        item.OfficePhoto
-                                                                    }
+                                                                    src={require(`./images/${item.OfficeLocation.toLowerCase()}.jpg`)}
                                                                     alt=""
-                                                                    class="picture-img"
+                                                                    className="picture-img"
                                                                 />
                                                             </picture>
                                                         </div>
                                                     </div>
-                                                    <div class="office-primary">
-                                                        <h3 class="text--4 office-name">
+                                                    <div className="office-primary">
+                                                        <h3 className="text--4 office-name">
                                                             {
                                                                 item.OfficeLocation
                                                             }
                                                         </h3>
-                                                        <p class="office-address">
+                                                        <p className="office-address">
                                                             {item.OfficeAddress}
                                                         </p>
-                                                        <p class="office-details">
+                                                        <p className="office-details">
                                                             <a
                                                                 href={`tel:#{item.PhoneNumber}`}
                                                                 rel="external"
@@ -128,14 +129,14 @@ class Footer extends Component {
                                                                 }
                                                             </a>
                                                         </p>
-                                                        <p class="office-directions">
+                                                        <p className="office-directions">
                                                             <svg
                                                                 width="20"
                                                                 height="22"
                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                 viewBox="0 0 15 22"
                                                                 focusable="false"
-                                                                tabindex="-1"
+                                                                tabIndex="-1"
                                                             >
                                                                 <path
                                                                     fill="inherit"
@@ -151,7 +152,7 @@ class Footer extends Component {
                                                                     item.DirectionUrl
                                                                 }
                                                                 rel="external"
-                                                                class="office-link"
+                                                                className="office-link"
                                                             >
                                                                 Get directions
                                                             </a>
@@ -162,13 +163,13 @@ class Footer extends Component {
                                         );
                                     })}
                             </div>
-                            <div class="footer-row">
-                                <div class="footer-social">
-                                    <div class="social-links">
+                            <div className="footer-row">
+                                <div className="footer-social">
+                                    <div className="social-links">
                                         <a
                                             href="https://twitter.com/"
                                             rel="external"
-                                            class="social-links-link"
+                                            className="social-links-link"
                                             aria-label="Twitter"
                                             title="Twitter"
                                         >
@@ -178,7 +179,7 @@ class Footer extends Component {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 21 18"
                                                 focusable="false"
-                                                tabindex="-1"
+                                                tabIndex="-1"
                                             >
                                                 <path
                                                     fill="inherit"
@@ -200,7 +201,7 @@ class Footer extends Component {
                                         <a
                                             href="https://www.linkedin.com/"
                                             rel="external"
-                                            class="social-links-link"
+                                            className="social-links-link"
                                             aria-label="LinkedIn"
                                             title="LinkedIn"
                                         >
@@ -210,7 +211,7 @@ class Footer extends Component {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 22 22"
                                                 focusable="false"
-                                                tabindex="-1"
+                                                tabIndex="-1"
                                             >
                                                 <path
                                                     fill="inherit"
@@ -221,7 +222,7 @@ class Footer extends Component {
                                         <a
                                             href="https://instagram.com/"
                                             rel="external"
-                                            class="social-links-link"
+                                            className="social-links-link"
                                             aria-label="Instagram"
                                             title="Instagram"
                                         >
@@ -231,7 +232,7 @@ class Footer extends Component {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 24 24"
                                                 focusable="false"
-                                                tabindex="-1"
+                                                tabIndex="-1"
                                             >
                                                 <path
                                                     fill="inherit"
@@ -242,7 +243,7 @@ class Footer extends Component {
                                         <a
                                             href="https://medium.com/"
                                             rel="external"
-                                            class="social-links-link"
+                                            className="social-links-link"
                                             aria-label="Medium"
                                             title="Medium"
                                         >
@@ -252,7 +253,7 @@ class Footer extends Component {
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 22 19"
                                                 focusable="false"
-                                                tabindex="-1"
+                                                tabIndex="-1"
                                             >
                                                 <path
                                                     fill="inherit"
@@ -272,8 +273,8 @@ class Footer extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <ul class="footer-links">
-                                    <li class="footer-link-item">
+                                <ul className="footer-links">
+                                    <li className="footer-link-item">
                                         <a href="/uk/privacy">Privacy</a>
                                     </li>
                                 </ul>
