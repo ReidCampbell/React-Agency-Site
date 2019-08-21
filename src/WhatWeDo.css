@@ -1,7 +1,7 @@
 .feature-container {
-    margin: 0 0 0 90px;
     justify-content: space-around;
     padding: 120px 130px;
+    width: calc(100% - 90px);
 }
 
 .row {

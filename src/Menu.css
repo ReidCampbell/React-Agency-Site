@@ -77,18 +77,30 @@ ul {
     font-weight: 700;
     line-height: 1.16;
 }
+.page-container {
+    width: 100%;
+    margin-left: 90px;
+    border-left: 1px solid #e0e0e0;
+}
 
 .nav-container {
     float: left;
     width: 90px;
     height: 100vh;
     background: transparent;
-    z-index: 10000;
+    z-index: 100001;
     display: flex;
     justify-content: space-between;
     position: fixed;
     overflow: hidden;
+    /* transition-property: border-right;
+    transition-delay: 0.25s;
+    border-right: 1px solid #e0e0e0; */
 }
+
+/* .nav-container.active {
+    border-right: none;
+} */
 
 .logo-btn svg {
     position: absolute;
@@ -118,6 +130,7 @@ ul {
     background: none;
     cursor: pointer;
 }
+
 /* .hamburger:hover {
     opacity: 0.7;
 } */

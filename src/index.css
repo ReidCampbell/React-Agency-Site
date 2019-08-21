@@ -4,12 +4,17 @@ body {
     font-size: 20px;
     margin: 0;
     overflow: auto;
-    max-width: 100%;
     overflow-x: hidden;
+    width: 100%;
+    color: #2c2b39;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 1680px;
     width: 100%;
+}
+
+#root {
+    width: 100%;
+    position: absolute;
 }

@@ -18,11 +18,11 @@ const OurVision = () => {
                     </div>
                 </div>
             </div>
-            <figure className="feature-image">
+            {/* <div className="feature-image">
                 <div className="picture picture-inline">
                     <img src={require("./images/office.jpg")} />
                 </div>
-            </figure>
+            </div> */}
         </>
     );
 };

@@ -6,6 +6,8 @@ import OurVision from "./OurVision";
 import FeatureContent from "./FeatureContent";
 import WhatWeDo from "./WhatWeDo";
 import Carousel from "./Carousel";
+import FeatureImage from "./FeatureImage";
+import Footer from "./Footer";
 
 class App extends Component {
     constructor(props, context) {
@@ -33,19 +35,24 @@ class App extends Component {
     render() {
         return (
             <>
-                <div className="header">
-                    <Menu
-                        handleMouseDown={this.handleMouseDown}
-                        menuVisibility={this.state.visible}
-                    />
-                    <div className="header-container">
-                        <Header />
+                <Menu
+                    handleMouseDown={this.handleMouseDown}
+                    menuVisibility={this.state.visible}
+                />
+                <div className="page-container">
+                    <div className="header">
+                        <div className="header-container">
+                            <Header />
+                        </div>
                     </div>
+                    <OurVision />
+                    <FeatureImage imgUrl={require("./images/office.jpg")} />
+                    <FeatureContent />
+                    <WhatWeDo />
+                    <Carousel />
+                    <FeatureImage imgUrl={require("./images/coffee.jpg")} />
+                    <Footer />
                 </div>
-                <OurVision />
-                <FeatureContent />
-                <WhatWeDo />
-                <Carousel />
             </>
         );
     }
