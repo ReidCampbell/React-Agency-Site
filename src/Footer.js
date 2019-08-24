@@ -56,7 +56,7 @@ class Footer extends Component {
                                         </p>
                                         <div className="field">
                                             <label for="email-input">
-                                                Enter your email
+                                                {/* Enter your email */}
                                             </label>
                                             <input
                                                 id="email-input"
@@ -64,7 +64,9 @@ class Footer extends Component {
                                                 type="email"
                                                 name="MERGE0"
                                                 required=""
-                                                value=""
+                                                value={this.props.searchString}
+                                                onchange={this.handleChange}
+                                                placeholder="Enter your email"
                                             />
                                         </div>
                                         <p className="newsletter-submit">

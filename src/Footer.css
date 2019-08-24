@@ -122,6 +122,7 @@ p + p {
     color: inherit;
     border-color: inherit;
     padding: 0.5em 0px;
+    outline-style: none;
 }
 
 .field input,
