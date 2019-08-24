@@ -12,25 +12,42 @@ export default class Responsive extends Component {
             speed: 500,
             slidesToShow: 1,
             slidesToScroll: 1,
-            initialSlide: 0
+            initialSlide: 0,
+            fade: true
         };
+
         return (
             <div className="carousel-container">
                 <Slider {...settings}>
                     <div className="slide">
-                        <h3>1</h3>
+                        <img
+                            className="carousel-img"
+                            src={require("./images/ms.png")}
+                        ></img>
                     </div>
                     <div className="slide">
-                        <h3>2</h3>
+                        <img
+                            className="carousel-img"
+                            src={require("./images/icons.png")}
+                        ></img>
                     </div>
                     <div className="slide">
-                        <h3>3</h3>
+                        <img
+                            className="carousel-img"
+                            src={require("./images/boxt.png")}
+                        ></img>
                     </div>
                     <div className="slide">
-                        <h3>4</h3>
+                        <img
+                            className="carousel-img"
+                            src={require("./images/swt.png")}
+                        ></img>
                     </div>
                     <div className="slide">
-                        <h3>5</h3>
+                        <img
+                            className="carousel-img"
+                            src={require("./images/maersk.png")}
+                        ></img>
                     </div>
                 </Slider>
             </div>

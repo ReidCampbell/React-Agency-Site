@@ -1,9 +1,7 @@
 .carousel-container {
-    width: calc(100% - 90px);
     justify-content: center;
     display: block;
-    margin: 100px;
-    max-width: 90vw;
+    margin: 100px 30px;
 }
 
 .slide h3 {
@@ -12,13 +10,8 @@
 }
 
 .slide {
-    padding: 120px 0;
-    background-color: blue;
+    outline-style: none;
 }
-
-/* ul {
-    width: 100vw;
-} */
 
 .slick-dots li button:before {
     font-size: 30px;
@@ -30,4 +23,17 @@
 .slick-list {
     border-radius: 8px;
     width: 100%;
+}
+
+.carousel-img {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slick-slider {
+    padding-bottom: 120px;
+}
+
+.slick-dots {
+    bottom: 90px;
 }

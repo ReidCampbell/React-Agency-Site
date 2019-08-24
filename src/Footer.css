@@ -1,6 +1,6 @@
 .footer-container {
     margin: 0 auto;
-    max-width: 1680px;
+    /* max-width: 1680px; */
     width: 100%;
 }
 
@@ -10,23 +10,6 @@
     padding-right: calc(env(safe-area-inset-right) + 130px);
     color: black;
 }
-
-/* @media (min-width: 1680px) .panel {
-    padding: 120px 130px;
-    padding-left: calc(env(safe-area-inset-left) + 130px);
-    padding-right: calc(env(safe-area-inset-right) + 130px);
-}
-@media (min-width: 375px) .panel {
-    padding: calc(45px + (120 - 45) * (100vw - 375px) / 1305)
-        calc(30px + (130 - 30) * (100vw - 375px) / 1305);
-    padding-left: calc(
-        env(safe-area-inset-left) + (30px + (130 - 30) * (100vw - 375px) / 1305)
-    );
-    padding-right: calc(
-        env(safe-area-inset-right) +
-            (30px + (130 - 30) * (100vw - 375px) / 1305)
-    );
-} */
 
 .footer-grid {
     display: grid;
@@ -465,31 +448,6 @@ button {
     flex-basis: 50%;
     margin-right: 30px;
 }
-
-/* @media (min-width: 78.75em) .office-primary {
-    margin-right: 0;
-}
-
-@media (min-width: 48em) .office-primary {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-basis: 50%;
-    -ms-flex-preferred-size: 50%;
-    flex-basis: 50%;
-    margin-right: 30px;
-} */
-
-/* @media (min-width: 1680px) .text--4 {
-    font-size: 30px;
-}
-@media (min-width: 375px) .text--4 {
-    font-size: calc(24px + (30 - 24) * (100vw - 375px) / 1305);
-} */
 
 .office-address {
     color: #666478;

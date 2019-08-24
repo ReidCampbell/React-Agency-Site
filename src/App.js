@@ -4,7 +4,6 @@ import Header from "./Header";
 import "./Menu.css";
 import OurVision from "./OurVision";
 import FeatureContent from "./FeatureContent";
-import WhatWeDo from "./WhatWeDo";
 import Carousel from "./Carousel";
 import FeatureImage from "./FeatureImage";
 import Footer from "./Footer";
